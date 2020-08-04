@@ -45,7 +45,7 @@
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=AlirezaSoltaniNeshan)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=AlirezaSoltaniNeshan)](https://github.com/AlirezaSoltaniNeshan)
 
 [twitter]: https://twitter.com/alirezacodes
 [instagram]: https://www.instagram.com/alireza.codes/
