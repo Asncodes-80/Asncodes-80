@@ -43,7 +43,8 @@
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=AlirezaSoltaniNeshan&show_icons=true&?theme=merko)](https://github.com/AlirezaSoltaniNeshan)
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=AlirezaSoltaniNeshan&show_icons=true&theme=radical)
+
 
 [twitter]: https://twitter.com/alirezacodes
 [instagram]: https://www.instagram.com/alireza.codes/
