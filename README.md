@@ -1,7 +1,5 @@
-### Hi there, I'm Jesse - aka [codeSTACKr][website] 👋
-
-## I'm a Mobile app, Web Developer and a Software Student!
-- 🔭 I’m currently working on a [Mobile App]!
+## Hi there, I'm Alireza, Mobile app and Web Developer | Software Student!
+- 🔭 I’m currently working on a Mobile App!
 - 🌱 I’m currently learning everything (AI, ML) 🤣
 - 👯 I’m looking to collaborate with other software student.
 - 🥅 2020 Goals: Learning basic concepts of AI and ML and learning full work with Core ML.
