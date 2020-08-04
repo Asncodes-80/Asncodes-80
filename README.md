@@ -27,10 +27,10 @@
 <img align="left" alt="SQL Base" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
 <img align="left" alt="non SQL MangoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
 <img align="left" alt="non SQL Firebase" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" />
-<!-- <img align="left" alt="" width="26px" src="" />
+<img align="left" alt="Apple" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/apple.svg" />
+<img align="left" alt="Core ML" width="26px" src="https://camo.githubusercontent.com/efd5b475cf24a8f2b65bfaff6cd03a33fb9ea550/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a4f5a4e5a4d4e71714a5971482d4c704e46594b4933772e706e67" />
 <img align="left" alt="" width="26px" src="" />
 <img align="left" alt="" width="26px" src="" />
-<img align="left" alt="" width="26px" src="" /> -->
 
 <br />
 <br />
