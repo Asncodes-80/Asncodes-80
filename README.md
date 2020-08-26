@@ -1,4 +1,4 @@
-## Hi there, I'm Alireza, Mobile app and Web Developer | Software Student!
+## Hi there, I'm Alireza, Mobile app and Backend developer | Software Student!
 - 🔭 I’m currently working on a Mobile App!
 - 🌱 I’m currently learning everything (AI, ML) 🤣
 - 👯 I’m looking to collaborate with other software student.
@@ -32,6 +32,7 @@
 <img align="left" alt="Apple" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/apple.svg" />
 <img align="left" alt="python" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />
 <img align="left" alt="npm" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png" />
+<img align="left" alt="Socket.io" width="26px" src="https://img.favpng.com/13/10/5/socket-io-node-js-javascript-network-socket-websocket-png-favpng-VqzQCwfrdxSAarJwqLSz2R0ky.jpg"/>
 <!-- <img align="left" alt="python" width="26px" src="" /> -->
 <br />
 <br />
