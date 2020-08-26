@@ -17,6 +17,7 @@
 
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
 <img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+<img align="left" alt="Socket.io" width="26px" src="https://avatars3.githubusercontent.com/u/10566080?s=400&v=4"/>
 <img align="left" alt="HTML" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
 <img align="left" alt="css" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="scss" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
@@ -32,7 +33,7 @@
 <img align="left" alt="Apple" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/apple.svg" />
 <img align="left" alt="python" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />
 <img align="left" alt="npm" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png" />
-<img align="left" alt="Socket.io" width="26px" src="https://img.favpng.com/13/10/5/socket-io-node-js-javascript-network-socket-websocket-png-favpng-VqzQCwfrdxSAarJwqLSz2R0ky.jpg"/>
+
 <!-- <img align="left" alt="python" width="26px" src="" /> -->
 <br />
 <br />
