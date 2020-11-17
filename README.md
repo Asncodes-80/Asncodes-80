@@ -1,5 +1,5 @@
 ## Hi there, I'm Alireza, Mobile app and Backend developer | Software Student!
-- 🌱 I’m currently learning AI with ML 
+- 🌱 I’m currently learning AI 
 - 👯 I’m looking to collaborate with other software student.
 - 🥅 2020 Goals: Learning basic concepts of AI and ML and learning full work with Core ML.
 - ⚡ Fun fact: I love to play Piano / drums
