@@ -3,8 +3,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Asncodes-80&layout=compact)](https://github.com/Asncodes-80/github-readme-stats)
 
 
-### Hi there <img  src="src/wave.gif" width="30" height="30"/>
-
+### Hi there 
 <!-- 👋 -->
 
 > <p align='left'>I am Associate Degree student at Shamsipour University. Focus on the researches AI fields, and Mobile App Developer</p>
