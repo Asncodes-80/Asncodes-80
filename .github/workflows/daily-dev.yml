@@ -19,5 +19,4 @@ jobs:
       - name: devcard
         uses: dailydotdev/action-devcard@2.0.2
         with:
-          devcard_id: ${{ secrets.DEVTOKEN }}
-          github_token: ${{ secrets.WORKFLOW_TOKEN }}
+          devcard_id: ${{ secrets.DEVID }}
