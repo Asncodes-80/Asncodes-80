@@ -9,6 +9,6 @@ Development software specialist.
 <a href="https://app.daily.dev/alirezacodes">
     <img
         src="https://github.com/Asncodes-80/Asncodes-80/blob/master/devcard.svg"
-        width="400" 
+        width="200" 
         alt="Alireza Soltani Neshan's Dev Card"/>
 </a>
