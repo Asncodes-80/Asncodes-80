@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./modules/home";
 import GalleryScreen from "./modules/gallery";
 import ErrorHandler, { HttpError } from "./components/ErrorHandler";
+import { resources } from "./config/resources";
 
 function App() {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ function App() {
   ));
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={resources.system.baseRoute}>
       <Routes>
         {React.Children.toArray(dynamicRoute)}
         <Route path="*" element={<HttpError code={404} t={t} />} />

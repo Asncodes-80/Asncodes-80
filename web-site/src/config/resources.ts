@@ -1,6 +1,9 @@
 import * as TranslationFiles from "../i18n/locales";
 
 export const resources = {
+  system: {
+    baseRoute: "Asncodes-80",
+  },
   /** Internationalization defaults */
   i18n: {
     /** All language about app locale*/
