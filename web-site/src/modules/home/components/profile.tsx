@@ -4,7 +4,7 @@ const Profile: React.FC<ScreenModule> = ({ t }): JSX.Element => {
   return (
     <div className="mx-[30px] w-[100%] main-profile">
       <img
-        src="Asncodes-80/avatar/profile.jpg"
+        src="/Asncodes-80/avatar/profile.jpg"
         className="w-[323px] rounded-full mb-[30px] main-col-avatar"
       />
       <p className="text-medium main-profile-sub-avatar">
