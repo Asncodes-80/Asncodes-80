@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: vazir;
+}
+
+.gallery-item:hover {
+    background-color: #1b1b1f;
+   opacity: 0.9; 
+   cursor: pointer;
+}
+
+.header-name {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.main-context {
+    @media (max-width: 600px) {
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+.main-profile-sub-avatar {
+    @media (max-width: 600px) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+.main-profile {
+    @media (max-width: 600px) {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.main-col-avatar {
+    @media (max-width: 600px) {
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+.main-col-mobile {
+    @media (max-width: 600px) {
+        flex-direction: column; 
+    }
+}
+
+@font-face {
+    font-family: vazir;
+    font-style: normal;
+    src: url(./assets/vazirmatn/static/Vazirmatn-Regular.ttf) format("truetype");
+}

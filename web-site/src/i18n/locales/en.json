@@ -1,0 +1,94 @@
+{
+  "errorHandler": {
+    "403": "403 | Access denied",
+    "404": "404 | Not found",
+    "500": "500 | CSR error"
+  },
+  "headline": {
+    "name": "Alireza Soltani Neshan",
+    "username": "Alirezacodes",
+    "menu": {
+      "about": "About",
+      "gallery": "Gallery",
+      "cv": "CV"
+    }
+  },
+  "main": {
+    "subAvatar": "Software specialist, enthusiastic to teaching and learning, with experience in academic environments, industrial and Research and Develop environments",
+    "skills": {
+      "label": "Skills",
+      "item1": "Programming",
+      "item2": "Mobile/Web Development",
+      "item3": "CI/CD",
+      "item4": "Security researcher",
+      "item5": "IoT/IoMT researcher",
+      "item6": "Block chain enthusiastic"
+    },
+    "languages": {
+      "label": "Languages",
+      "item1": "Typescript",
+      "item2": "Dart",
+      "item3": "Python",
+      "item4": "Swift",
+      "item5": "Rust"
+    },
+    "about": {
+      "label": "ABOUT",
+      "note": {
+        "title": "Note: ",
+        "content": "Currently I am working on a review paper about IoMT and its privacy protection with my teacher and a doctoral student of the network"
+      },
+      "firstParagraph": "My name is Alireza, and I'm 22 years old. I'm incredibly enthusiastic about the prospect of collaborating in the exciting field of Protein design and engineering. I'm pursuing a master's degree in Software Engineering and boast five years of rich experience in software architectures, as well as Mobile and Web application programming. In my current role within the university, I am delving into the fascinating realm of the security of IoMT (Internet of Medical Things) over Blockchain networks.",
+      "experiences": {
+        "item1": "From 2017 to 2019, I interned in networking at Iran University of Science and Technology. During this time, I gained valuable experience in configuring Cisco switches, working with Linux, setting up servers, and dabbling in back-end development with Node.js.",
+        "item2": "In February 2021, I developed Flutter Mobile Application for distributed Iraqi online Store",
+        "item3": "In December 2020 until now, I have developed a lot of applications with Flutter framework for MCI Smart Parking project, Implementation of organizational projects (B2B), Checking guest entrance and exit in Ayandeh Bank and Monitoring Front-end Application for gas pipeline from Abadan to Iraq-Basra",
+        "item4": "In December 2022 until now, I have Implemented Desktop Application with Tauri for Sightence project Basir technologies. Sightence device is a body scanner (Efficient and cheaper version of Provision body scanner)",
+        "item5": "From July to November 2023, I had the opportunity to work with AJP Company | Nozhan Softwares as a Front-end Application Developer and UI/UX designer for the Mashinline Application. Mashinline is an online platform for dealing in industrial, agricultural machinery, and spare parts, offering both new and used products through direct and indirect methods in Iran and the UAE. During my time there, I worked on developing the client side of Mashinline using Flutter, and also contributed to the development of the admin panel using React.js.",
+        "item6": "In September 2023, I founded Labroo freedom Academy to teaching programming with Javascript and Typescript"
+      },
+      "educations": {
+        "label": "Educations",
+        "item1": "From 2016 to 2019: Dar al-Funun (Technical and Professional) conservatory, Tehran — Computer diploma",
+        "item2": "From 2019 to 2023: Shamsipour Technical and Vocational College, Tehran - Bachelor's degree, Computer Software Engineering",
+        "item3": "in September 2023: Azad University (IAU), Tehran - Master's degree, Computer Software Engineering"
+      }
+    }
+  },
+  "gallery": {
+    "head": {
+      "title": "Papers and codes",
+      "content": "Welcome to my impressive collection of groundbreaking work in Bachelor's and Master's Computer and Software Engineering! All of my research is freely accessible and open to contributions. I also share my additional papers and articles for download here. "
+    },
+    "items": {
+      "item1": {
+        "title": "Block chain papers",
+        "content": "I’m working over data transformation based on block chain networks. With this decentralized blocks we can transform data secretly. At this papers you can learn about block chain in Persian language."
+      },
+      "item2": {
+        "title": "RTOS Terminologies",
+        "content": "All terminologies I have learned from Reliable Real-Time Operating System for IoT Devices"
+      },
+      "item3": {
+        "title": "NoSQL  Breakdown report",
+        "content": "A Large-scale Analysis of Misconfigured NoSQL Services"
+      },
+      "item4": {
+        "title": "Addition Mesh ",
+        "content": "Parallel addition mesh algorithm with Rust sample"
+      },
+      "item5": {
+        "title": "Parsing Expression Grammar Notation",
+        "content": "My PEGN notes"
+      },
+      "item6": {
+        "title": "SNMP Client",
+        "content": "Rust Snmp Producer sample microservice"
+      },
+      "item7": {
+        "title": "Another SparQL Query set",
+        "content": "My SparQL notes"
+      }
+    }
+  }
+}
