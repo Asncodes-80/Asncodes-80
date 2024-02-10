@@ -16,14 +16,18 @@ jobs:
         with:
           node-version: 19
       - name: Startup
-        run: | 
-            npm install
-            npm run tailwind
-            npm run build
+        run: npm install
+        working-directory: ./web-site
+      - name: Tailwind 
+        run: npm run tailwind 
+        working-directory: ./web-site
+      - name: Build 
+        run: npm run build 
         working-directory: ./web-site
       - name: Deploy
         working-directory: ./web-site
         run: |
+          ls
           cd dist/
           git init
           git config user.name "Asncodes-80"
