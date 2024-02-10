@@ -1,0 +1,36 @@
+# Build Flutter web app and deploy as gh-pages
+name: Website
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.WEBSITE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Node version 19
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+      - name: Startup
+        run: | 
+            cd ./web-site
+            npm install
+            npm run tailwind
+            npm run build
+        working-directory: ./web-site
+      - name: Deploy
+        working-directory: ./web-site
+        run: |
+          cd dist/
+          git init
+          git config user.name "Asncodes-80"
+          git config user.email "asn80.asn@hotmail.com"
+          git remote add secure-origin https://username:${GITHUB_TOKEN}@github.com/Asncodes-80/Asncodes-80.git
+          git checkout -b website 
+          git add .
+          git commit -m "ci(gh-pages): update and deploy web app"
+          git push --force secure-origin website
