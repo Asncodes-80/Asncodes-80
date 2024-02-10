@@ -12,7 +12,7 @@ const Footer: React.FC<ScreenModule> = ({ t }): JSX.Element => {
   const icons: { icon: any; link: string }[] = [
     { icon: XIcon, link: "https://x.com/asn80soltani" },
     { icon: LinkedinIcon, link: "https://linkedin.com/in/alirezacodes" },
-    { icon: EmailIcon, link: "a.soltani@tnb-iau.ac.ir" },
+    { icon: EmailIcon, link: "mailto:a.soltani@iau-tnb.ac.ir" },
     { icon: GitHubIcon, link: "https://github.com/Asncodes-80" },
     { icon: InstagramIcon, link: "https://instagram.com/alireza.codes" },
     {
