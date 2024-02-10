@@ -19,7 +19,7 @@ jobs:
         run: npm install
         working-directory: ./web-site
       - name: Tailwind 
-        run: npm run tailwind 
+        run: npx tailwindcss -i ./src/index.css -o ./dist/output.css 
         working-directory: ./web-site
       - name: Build 
         run: npm run build 
@@ -27,8 +27,8 @@ jobs:
       - name: Deploy
         working-directory: ./web-site
         run: |
-          ls
           cd dist/
+          ls
           git init
           git config user.name "Asncodes-80"
           git config user.email "asn80.asn@hotmail.com"
