@@ -19,9 +19,7 @@ jobs:
         run: npm install
         working-directory: ./web-site
       - name: Tailwind 
-        run: | 
-          npx tailwindcss -i ./src/index.css -o ./style/output.css 
-          cat ./style/output.css
+        run: npx tailwindcss -i ./src/index.css -o ./style/output.css 
         working-directory: ./web-site
       - name: Build 
         run: npm run build 
