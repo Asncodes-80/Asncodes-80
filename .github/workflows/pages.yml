@@ -17,6 +17,7 @@ jobs:
           node-version: 19
       - name: Startup
         run: | 
+            ls
             cd ./web-site
             npm install
             npm run tailwind
