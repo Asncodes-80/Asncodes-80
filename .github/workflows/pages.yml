@@ -32,4 +32,4 @@ jobs:
           git checkout -b website 
           git add .
           git commit -m "ci(gh-pages): update and deploy web app"
-          git push --force secure-origin website
+          git push -u origin website
