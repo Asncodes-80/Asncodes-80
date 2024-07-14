@@ -6,6 +6,8 @@ import Content from "./components/Content";
 
 const GalleryScreen: React.FC<ScreenModule> = ({ t }) => {
   const links: string[] = [
+    "protein-interaction-networks-graph",
+    "explainable-software-systems-report",
     "bc-papers",
     "rtos-terminologies",
     "misconfigured-nosql-breakdown",
@@ -20,7 +22,7 @@ const GalleryScreen: React.FC<ScreenModule> = ({ t }) => {
       <div className="flex flex-col mt-10">
         {React.Children.toArray(
           links.map((link, index: number) => (
-            <div className="m-10 p-4">
+            <div className="m-5 p-4">
               <Content
                 onClick={() =>
                   window.open(
