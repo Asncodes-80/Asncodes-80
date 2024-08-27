@@ -22,7 +22,7 @@
       "item3": "CI/CD",
       "item4": "Security researcher",
       "item5": "IoT/IoMT researcher",
-      "item6": "Block chain researcher"
+      "item6": "Blockchain researcher"
     },
     "languages": {
       "label": "Languages",
@@ -71,7 +71,7 @@
       },
       "item3": {
         "title": "Block chain papers",
-        "content": "I’m working over data transformation based on block chain networks. With this decentralized blocks we can transform data secretly. At this papers you can learn about block chain in Persian language."
+        "content": "I’m working over data transformation based on blockchain networks. With this decentralized blocks we can transform data secretly. At this papers you can learn about blockchain in Persian language."
       },
       "item4": {
         "title": "RTOS Terminologies",
