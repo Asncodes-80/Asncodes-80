@@ -1,10 +1,14 @@
 # Alireza.codes
 
-I'm Alireza Soltani Neshan, you can find my everywhere by `Alireza.codes`. I'm
-computer engineer student, and I'm very enthusiastic to learn more and deep in
-this filed. I'm 4 years old Front-end developer, and my main target at this
-level is independent in Back-end and Front-end. My current field is Research and
-Development software specialist.
+I'm Alireza Soltani Neshan, and you can find me online at Alirezacodes. I am
+a computer software engineering student, and I am very enthusiastic about
+deepening my knowledge in this field. I have been a researcher and developer for
+five years, and my current goal is to become proficient in both back-end and
+front-end development. Recently, I have been engaged in learning about Genetic
+Engineering, focusing particularly on pattern matching and data analysis in the
+field of Bioinformatics and Healthcare 4.0. Additionally, I am currently working
+on writing my papers such as survey and a novel system in digital Healthcare
+4.0. 
 
 <a href="https://app.daily.dev/alirezacodes">
     <img
