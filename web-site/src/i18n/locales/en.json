@@ -9,7 +9,7 @@
     "username": "Alirezacodes",
     "menu": {
       "about": "About",
-      "gallery": "Gallery",
+      "gallery": "Repos",
       "cv": "CV"
     }
   },
@@ -20,9 +20,7 @@
       "item1": "Programming",
       "item2": "Mobile/Web Development",
       "item3": "CI/CD",
-      "item4": "Security researcher",
-      "item5": "IoT/IoMT researcher",
-      "item6": "Blockchain researcher"
+      "item4": "IoT/IoMT/Security/Blockchain researcher"
     },
     "languages": {
       "label": "Languages",
@@ -36,22 +34,23 @@
       "label": "ABOUT",
       "note": {
         "title": "Note: ",
-        "content": "Currently I am working on a review paper about IoMT and its privacy protection with my teacher and a doctoral student of the network"
+        "content": "Currently I am working on two papers, a novel mHealth energy efficient integrated digital healthcare system and a review paper about IoMT and its privacy protection."
       },
-      "firstParagraph": "My name is Alireza, and I'm 22 years old. I'm incredibly enthusiastic about the prospect of collaborating in the exciting field of Protein design and engineering. I'm pursuing a master's degree in Software Engineering and boast five years of rich experience in software architectures, as well as Mobile and Web application programming. In my current role within the university, I am delving into the fascinating realm of the security of IoMT (Internet of Medical Things) over Blockchain networks.",
+      "firstParagraph": "My name is Alireza, and I'm 23 years old. I'm incredibly enthusiastic about the prospect of collaborating in the exciting field of Protein design and engineering. I'm pursuing a master's degree in Software Engineering and boast five years of rich experience in software architectures, as well as Mobile and Web application programming. In my current role within the university, I am delving into the fascinating realm of the security of IoMT (Internet of Medical Things) over Blockchain networks.",
       "experiences": {
-        "item1": "From 2017 to 2019, I interned in networking at Iran University of Science and Technology. During this time, I gained valuable experience in configuring Cisco switches, working with Linux, setting up servers, and dabbling in back-end development with Node.js.",
-        "item2": "In February 2021, I developed Flutter Mobile Application for distributed Iraqi online Store",
-        "item3": "In December 2020 until now, I have developed a lot of applications with Flutter framework for MCI Smart Parking project, Implementation of organizational projects (B2B), Checking guest entrance and exit in Ayandeh Bank and Monitoring Front-end Application for gas pipeline from Abadan to Iraq-Basra",
-        "item4": "In December 2022 until now, I have Implemented Desktop Application with Tauri for Sightence project Basir technologies. Sightence device is a body scanner (Efficient and cheaper version of Provision body scanner)",
-        "item5": "From July to November 2023, I had the opportunity to work with AJP Company | Nozhan Softwares as a Front-end Application Developer and UI/UX designer for the Mashinline Application. Mashinline is an online platform for dealing in industrial, agricultural machinery, and spare parts, offering both new and used products through direct and indirect methods in Iran and the UAE. During my time there, I worked on developing the client side of Mashinline using Flutter, and also contributed to the development of the admin panel using React.js.",
-        "item6": "In September 2023, I founded Labroo freedom Academy to teaching programming with Javascript and Typescript"
+        "label": "Industrial Experiences",
+        "item1": "In December 2020 until now, I have developed a lot of applications for Modbus data gathering, React TCI smart parking project, Flutter application MCI smart parking project, Implementation of organizational (B2B) projects, Checking guest entrance and exit in Ayandeh Bank and Monitoring Front-end Application for gas pipeline from Abadan to Iraq-Basra",
+        "item2": "In September 2023, I founded Labroo freedom Academy to teaching programming with Javascript and Typescript",
+        "item3": "From July to November 2023, I had the opportunity to work with AJP Company | Nozhan Softwares as a Front-end Application Developer and UI/UX designer for the Mashinline Application. Mashinline is an online platform for dealing in industrial, agricultural machinery, and spare parts, offering both new and used products through direct and indirect methods in Iran and the UAE. During my time there, I worked on developing the client side of Mashinline using Flutter, and also contributed to the development of the admin panel using React.js.",
+        "item4": "From December 2022 to March 2024, I have Implemented Desktop Application with Tauri for Sightence project Basir technologies. Sightence device is a body scanner (Efficient and cheaper version of Provision body scanner)",
+        "item5": "In February 2021, I developed Flutter Mobile Application for distributed Iraqi online Store",
+        "item6": "From 2017 to 2019, I interned in networking at Iran University of Science and Technology. During this time, I gained valuable experience in configuring Cisco switches, working with Linux, setting up servers, and dabbling in back-end development with Node.js."
       },
       "educations": {
         "label": "Educations",
-        "item1": "From 2016 to 2019: Dar al-Funun (Technical and Professional) conservatory, Tehran — Computer diploma",
+        "item1": "In September 2023: Azad University (IAU), North Tehran - Master's degree, Computer Software Engineering",
         "item2": "From 2019 to 2023: Shamsipour Technical and Vocational College, Tehran - Bachelor's degree, Computer Software Engineering",
-        "item3": "in September 2023: Azad University (IAU), Tehran - Master's degree, Computer Software Engineering"
+        "item3": "From 2016 to 2019: Darolfonoon Technical and Professional Conservatory, Tehran — Computer Diploma"
       }
     }
   },
@@ -62,38 +61,42 @@
     },
     "items": {
       "item1": {
+        "title": "LamdaRED",
+        "content": "LamdaRED is a simple way to create your Requirement Engineering Diagrams without using a mouse or the complex interface of draw.io just by using straightforward syntax!"
+      },
+      "item2": {
         "title": "Proteins Interactions Network Graph",
         "content": "My recent research focuses on protein design to enhance the treatment of depression through serotonin modulation."
       },
-      "item2": {
+      "item3": {
         "title": "Requirement Engineering Report",
         "content": "Report of Explainable software system: from requirements analysis to system evaluation"
       },
-      "item3": {
+      "item4": {
         "title": "Block chain papers",
         "content": "I’m working over data transformation based on blockchain networks. With this decentralized blocks we can transform data secretly. At this papers you can learn about blockchain in Persian language."
       },
-      "item4": {
+      "item5": {
         "title": "RTOS Terminologies",
         "content": "All terminologies I have learned from Reliable Real-Time Operating System for IoT Devices"
       },
-      "item5": {
+      "item6": {
         "title": "NoSQL  Breakdown report",
         "content": "A Large-scale Analysis of Misconfigured NoSQL Services"
       },
-      "item6": {
+      "item7": {
         "title": "Addition Mesh ",
         "content": "Parallel addition mesh algorithm with Rust sample"
       },
-      "item7": {
+      "item8": {
         "title": "Parsing Expression Grammar Notation",
         "content": "My PEGN notes"
       },
-      "item8": {
+      "item9": {
         "title": "SNMP Client",
         "content": "Rust Snmp Producer sample microservice"
       },
-      "item9": {
+      "item10": {
         "title": "Another SparQL Query set",
         "content": "My SparQL notes"
       }

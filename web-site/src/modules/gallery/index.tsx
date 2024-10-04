@@ -6,6 +6,7 @@ import Content from "./components/Content";
 
 const GalleryScreen: React.FC<ScreenModule> = ({ t }) => {
   const links: string[] = [
+    "lamda_red",
     "protein-interaction-networks-graph",
     "explainable-software-systems-report",
     "bc-papers",

@@ -3,7 +3,7 @@ import React from "react";
 const Context: React.FC<ScreenModule> = ({ t }): JSX.Element => {
   return (
     <div className="mx-[91px] main-context">
-      <h5 className="text-large text-primary mb-[40px]">
+      <h5 className="text-large text-primary mb-[20px] mt-[20px]">
         {t("main.about.label")}
       </h5>
       <p>
@@ -12,7 +12,11 @@ const Context: React.FC<ScreenModule> = ({ t }): JSX.Element => {
       </p>
       <p className="text-medium mt-[20px]">{t("main.about.firstParagraph")}</p>
 
-      <ul className="mt-[47px] list-disc">
+      <h5 className="text-large text-primary mt-[20px] mb-[20px]">
+        {t("main.about.experiences.label")}
+      </h5>
+
+      <ul className="list-disc">
         {React.Children.toArray(
           [...new Array(6)].map((_, index: number) => (
             <li>{t(`main.about.experiences.item${index + 1}`)}</li>
@@ -20,11 +24,11 @@ const Context: React.FC<ScreenModule> = ({ t }): JSX.Element => {
         )}
       </ul>
 
-      <h5 className="text-large text-primary mt-[20px]">
+      <h5 className="text-large text-primary mt-[20px] mb-[20px]">
         {t("main.about.educations.label")}
       </h5>
 
-      <ul className="mt-[40px] list-disc">
+      <ul className="list-disc">
         {React.Children.toArray(
           [...new Array(3)].map((_, index: number) => (
             <li>{t(`main.about.educations.item${index + 1}`)}</li>

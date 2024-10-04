@@ -16,7 +16,7 @@ const Profile: React.FC<ScreenModule> = ({ t }): JSX.Element => {
         </h5>
         <ul className="list-disc">
           {React.Children.toArray(
-            [...new Array(6)].map((_, index: number) => (
+            [...new Array(4)].map((_, index: number) => (
               <li className="text-medium mb-1">
                 {t(`main.skills.item${index + 1}`)}
               </li>
