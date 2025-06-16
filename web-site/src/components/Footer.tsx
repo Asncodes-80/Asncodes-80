@@ -7,9 +7,11 @@ import EmailIcon from "../assets/icons/email.svg";
 import GitHubIcon from "../assets/icons/github.svg";
 import InstagramIcon from "../assets/icons/instagram.svg";
 import StackOverFlow from "../assets/icons/stackoverflow.svg";
+import Youtube from "../assets/icons/youtube.svg";
 
 const Footer: React.FC<ScreenModule> = ({ t }): JSX.Element => {
   const icons: { icon: any; link: string }[] = [
+    { icon: Youtube, link: "https://youtube.com/alirezacodes" },
     { icon: XIcon, link: "https://x.com/asn80soltani" },
     { icon: LinkedinIcon, link: "https://linkedin.com/in/alirezacodes" },
     { icon: EmailIcon, link: "mailto:a.soltani@iau-tnb.ac.ir" },
