@@ -1,14 +1,13 @@
 # Alireza.codes
 
-Software specialist, enthusiastic about teaching and learning edge technologies,
-with experience in academic environments, industrial and Research and Develop
-environments. I'm studying master's degree in Software Engineering at IAU-NTB in
-the field of digital healthcare 4.0. I'm working on my thesis about developing
-a novel digital healthcare system in mHealth, Internet of Medical Things (IoMT)
-with AI-enabled and real-time pandemic disease monitoring. I'm interested in
-launching my integrated system in digital healthcare systems within the world of
-Copilots and AI assistants!
-
+Software specialist with extensive experience in academic, industrial, and
+R&D environments, with a strong passion for teaching and adopting cutting-edge
+technologies. Currently pursuing a master's degree in Software Engineering, 
+specializing in Digital Healthcare 4.0. Experienced as an independent developer, 
+leading the design and development of an innovative integrated digital healthcare 
+RPM & wellness system. Key areas of interest and expertise include software 
+development, safety-critical and secure systems, AI Large Language Models, 
+biotechnology, and post-quantum security innovations.
 <a href="https://app.daily.dev/alirezacodes">
     <img
         src="https://github.com/Asncodes-80/Asncodes-80/blob/master/devcard.svg"
