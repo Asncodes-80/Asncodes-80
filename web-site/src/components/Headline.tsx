@@ -111,6 +111,7 @@ export default function Headline({ t }: ScreenModule) {
             { to: "/", label: "about", number: "01" },
             { to: "/gallery", label: "work", number: "02" },
             { to: "/interests", label: "interests", number: "03" },
+            { to: "/talk", label: "talk", number: "04" },
           ].map((item) => (
             <NavLink
               key={item.to}

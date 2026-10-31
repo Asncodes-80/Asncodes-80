@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import HomeScreen from "./modules/home";
 import GalleryScreen from "./modules/gallery";
 import InterestsScreen from "./modules/interests";
+import TalkScreen from "./modules/talk";
 import ErrorHandler, { HttpError } from "./components/ErrorHandler";
 import { Container } from "./components/Containers";
 import PageTransition from "./components/PageTransition";
@@ -17,7 +18,9 @@ function PageEffects() {
         ? "work"
         : pathname === "/interests"
           ? "interests"
-          : "about";
+          : pathname === "/talk"
+            ? "talk"
+            : "about";
     document.title = `${t(`nav.${section}`)} — Alireza Soltani Neshan`;
     document.documentElement.lang = i18n.language;
     document.documentElement.dir = i18n.language.startsWith("fa")
@@ -41,6 +44,7 @@ export default function App() {
                 <Route path="/gallery" element={<GalleryScreen t={t} />} />
                 <Route path="/work" element={<GalleryScreen t={t} />} />
                 <Route path="/interests" element={<InterestsScreen t={t} />} />
+                <Route path="/talk" element={<TalkScreen t={t} />} />
                 <Route path="*" element={<HttpError code={404} t={t} />} />
               </Routes>
             </ErrorHandler>

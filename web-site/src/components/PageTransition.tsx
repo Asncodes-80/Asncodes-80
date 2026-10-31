@@ -12,6 +12,7 @@ const pageOrder: Record<string, number> = {
   "/gallery": 1,
   "/work": 1,
   "/interests": 2,
+  "/talk": 3,
 };
 
 export default function PageTransition({
@@ -79,8 +80,8 @@ export default function PageTransition({
     } else {
       const order =
         Math.sign(
-          (pageOrder[requested.pathname] ?? 3) -
-            (pageOrder[committed.current.pathname] ?? 3),
+          (pageOrder[requested.pathname] ?? 4) -
+            (pageOrder[committed.current.pathname] ?? 4),
         ) || 1;
       const direction =
         order * (document.documentElement.dir === "rtl" ? -1 : 1);
@@ -138,11 +139,9 @@ export default function PageTransition({
       } catch {
         /* Keep malformed fragments navigable. */
       }
-      document
-        .getElementById(id)
-        ?.scrollIntoView({
-          behavior: reduced || changedPage ? "instant" : "smooth",
-        });
+      document.getElementById(id)?.scrollIntoView({
+        behavior: reduced || changedPage ? "instant" : "smooth",
+      });
     } else {
       window.scrollTo({ top: 0, behavior: "instant" });
     }

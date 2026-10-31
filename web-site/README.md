@@ -18,6 +18,7 @@ The default URL is `http://localhost:5173/Asncodes-80/`. The existing GitHub Pag
 - `src/data/resume.ts`: profile, contact details, six work experiences, three qualifications, skills, and open projects. English and Persian text live together for factual consistency.
 - `src/data/interests.ts`: the owner's 15 games, eight films/series, and six books. Each item has an explicit `kind`, `status`, local artwork, alternative text, source credit, and optional creator or official link.
 - `src/data/medlife.ts`: five bilingual project chapters, with the seven original project photographs in `public/images/projects/medlife/`. Both home and work open the same animated mini page; each photograph links to its locally hosted full-size original.
+- `src/data/talks.ts`: six curated talks verified against the owner's YouTube channel, with original Persian titles, English translations, durations, topic shelves, and direct video links. The thumbnails in `public/images/talks/` are served locally.
 - `src/i18n/locales/{en,fa}.json`: interface labels and editorial copy. The language button also switches text direction and remembers the selection in the browser.
 - `public/documents/alireza-soltani-neshan-resume.pdf`: the supplied résumé, unchanged, linked from the header.
 - `public/images/interests/`: locally served WebP cover artwork. Sources are available in each title's details dialog. Artwork belongs to its respective rights holder.
@@ -30,6 +31,7 @@ The shared media states are `completed`, `in-progress`, and `planned`. The UI tr
 - `/`: introduction, selected projects, experience, education, skills, and contact.
 - `/gallery`: the MedLife case study and mini page, Sandogh gold-market decision assistant, software tools, and research archive. `/work` also renders this page. Sandogh uses a native SVG illustration, with its current API constraint and subscription development plan documented alongside the stack and live project link.
 - `/interests`: separate game, screen, and book shelves, with status filters, search, and keyboard-accessible title dialogs.
+- `/talk`: a cinematic featured-talk entrance, two scrollable topic shelves, and a keyboard-accessible video player. YouTube's privacy-enhanced embed loads only after a visitor chooses to watch. Closing the player removes the iframe and stops playback; a direct YouTube link is also provided.
 
 Reduced-motion preferences are respected. The layout supports mobile and desktop, both left-to-right and right-to-left.
 

@@ -6,7 +6,8 @@
     "resume": "Résumé",
     "language": "Switch to Persian",
     "home": "Alirezacodes — home",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "talk": "Talk"
   },
   "meta": {
     "portfolio": "INDEPENDENT MIND. CONNECTED WORLD.",
@@ -206,5 +207,28 @@
     "previous": "Previous",
     "next": "Next chapter",
     "done": "Back to portfolio"
+  },
+  "talk": {
+    "intro": "Software, people, and the ideas I keep coming back to. A few conversations worth pressing play on.",
+    "channel": "My YouTube channel",
+    "originals": "ORIGINAL TALKS",
+    "originalAudio": "ORIGINAL AUDIO",
+    "featured": "IN THE SPOTLIGHT",
+    "language": "IN PERSIAN",
+    "watch": "Watch now",
+    "play": "Play talk",
+    "browse": "Explore the collection",
+    "chooseFeatured": "Choose a featured talk",
+    "collection": "THE COLLECTION / PRESS PLAY, STAY CURIOUS",
+    "selectedTalks": "SELECTED TALKS",
+    "episodes": "TALKS",
+    "previous": "Previous talks",
+    "next": "Next talks",
+    "keepCurious": "THERE’S MORE TO THE CONVERSATION",
+    "moreTitle": "Curiosity doesn’t end here.",
+    "moreDescription": "More ideas, experiments, and conversations on my channel. Come think along.",
+    "allVideos": "All videos on YouTube",
+    "close": "Close player",
+    "youtube": "Watch on YouTube"
   }
 }

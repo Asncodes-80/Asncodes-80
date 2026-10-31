@@ -22,6 +22,8 @@ const targets = [
   ".case-system",
   ".archive-project",
   ".media-card",
+  ".talk-card",
+  ".talk-channel-footer",
   ".collection-toolbar",
   ".collection-colophon",
   ".collection-empty",
