@@ -2,7 +2,7 @@ import * as TranslationFiles from "../i18n/locales";
 
 export const resources = {
   system: {
-    baseRoute: "Asncodes-80",
+    baseRoute: "/Asncodes-80/",
   },
   /** Internationalization defaults */
   i18n: {
@@ -26,34 +26,34 @@ export const resources = {
     colorsScheme: {
       darkScheme: {
         primary: {
-          DEFAULT: "#51afef",
-          foreground: "#A9A1E1",
+          DEFAULT: "#50fa7b",
+          foreground: "#bd93f9",
         },
         secondary: {
-          DEFAULT: "#ecbe7b",
-          foreground: "#98BE65",
+          DEFAULT: "#ff79c6",
+          foreground: "#f1fa8c",
         },
         background: {
-          DEFAULT: "#282c34",
-          foreground: "#bbc2cf",
+          DEFAULT: "#282a36",
+          foreground: "#f8f8f2",
         },
-        foreground: "#bbc2cf",
-        divider: "#5b6268",
+        foreground: "#f8f8f2",
+        divider: "#474957",
         overlay: {
-          DEFAULT: "#1b1b1f",
-          foreground: "#e4e2e6",
+          DEFAULT: "#21222c",
+          foreground: "#f8f8f2",
         },
         focus: {
-          DEFAULT: "#51afef",
-          foreground: "#00297b",
+          DEFAULT: "#50fa7b",
+          foreground: "#21222c",
         },
         content1: {
-          DEFAULT: "#45464f",
-          foreground: "#e4e2e6",
+          DEFAULT: "#2e303e",
+          foreground: "#f8f8f2",
         },
         danger: {
-          DEFAULT: "#ffb4ab",
-          foreground: "#690005",
+          DEFAULT: "#ff5555",
+          foreground: "#f8f8f2",
         },
       },
     },

@@ -1,106 +1,210 @@
 {
+  "nav": {
+    "about": "About",
+    "work": "Work & research",
+    "interests": "After hours",
+    "resume": "Résumé",
+    "language": "Switch to Persian",
+    "home": "Alirezacodes — home",
+    "skip": "Skip to content"
+  },
+  "meta": {
+    "portfolio": "INDEPENDENT MIND. CONNECTED WORLD.",
+    "location": "TEHRAN, IRAN",
+    "edition": "PERSONAL PORTFOLIO / VOL. 01"
+  },
+  "hero": {
+    "eyebrow": "SOFTWARE ENGINEER · RESEARCHER · BUILDER",
+    "line1": "HUMAN.",
+    "line2": "CURIOUS.",
+    "line3": "BY DESIGN.",
+    "intro": "Hey, I’m Alireza.",
+    "description": "I turn complex problems into thoughtful software. From web and mobile to secure, connected healthcare.",
+    "work": "Explore my work",
+    "contact": "Let’s connect",
+    "portrait": "FIG. 01 / THE HUMAN BEHIND THE CODE",
+    "sticker": "HELLO, WORLD!",
+    "caption": "ALIREZA SOLTANI NESHAN",
+    "captionSub": "A little curiosity. A lot of code.",
+    "scroll": "SCROLL TO EXPLORE"
+  },
+  "ribbon": {
+    "first": "THINK DEEPLY",
+    "second": "BUILD THOUGHTFULLY",
+    "third": "STAY CURIOUS",
+    "fourth": "REPEAT"
+  },
+  "about": {
+    "eyebrow": "01 / THE PERSON",
+    "title": "More than a job title.",
+    "intro": "A software specialist with a researcher’s curiosity and a builder’s mindset.",
+    "body": "I work across front-end engineering, connected devices, and applied research. My experience spans industry, academia, and R&D, with a particular interest in making complex systems useful to people. Teaching and learning are part of how I work, every day.",
+    "born": "BORN AUG 01, 2001",
+    "location": "BASED IN TEHRAN, IRAN",
+    "first": "Interfaces that make sense.",
+    "firstBody": "Web, mobile, and desktop applications with React, Flutter, and Tauri.",
+    "second": "Systems that connect.",
+    "secondBody": "From industrial IoT monitoring to secure medical devices and digital care.",
+    "third": "Questions worth asking.",
+    "thirdBody": "Exploring software explainability, blockchain security, and healthcare AI."
+  },
+  "section": {
+    "selected": "02 / SELECTED WORK",
+    "workTitle": "Ideas, made real.",
+    "allWork": "All work & research",
+    "experience": "03 / THE JOURNEY",
+    "experienceTitle": "Built on experience.",
+    "experienceDescription": "Industry, independent work, and a persistent need to figure things out.",
+    "education": "04 / KEEP LEARNING",
+    "educationTitle": "Always a student.",
+    "skills": "05 / THE TOOLBOX",
+    "skillsTitle": "Tools of the trade.",
+    "skillsDescription": "A practical stack, shaped by the problems I work on.",
+    "favorites": "CURRENT LANGUAGE CURIOSITIES",
+    "languageTitle": "HUMAN LANGUAGES",
+    "persian": "Persian · Native",
+    "english": "English · ILR level 2",
+    "gpa": "GPA"
+  },
+  "project": {
+    "medlifeLabel": "DIGITAL HEALTHCARE / 2025",
+    "medlifeTitle": "MedLife",
+    "medlifeDescription": "Connecting patients, clinicians, and medical devices through a secure digital healthcare ecosystem.",
+    "medlifeLink": "Explore the ecosystem",
+    "lamdaLabel": "OPEN SOURCE / 2024 — PRESENT",
+    "lamdaDescription": "Less dragging. More thinking. A text-first approach to requirement engineering diagrams.",
+    "lamdaLink": "Discover Lamda RED",
+    "hardware": "CONNECTED DEVICE",
+    "security": "ENCRYPTED LINK",
+    "care": "PATIENT ↔ CLINICIAN",
+    "requirement": "REQUIREMENT",
+    "model": "MODEL",
+    "clarity": "CLARITY",
+    "concept": "SYSTEM CONCEPT / NOT A PRODUCT SCREENSHOT",
+    "market": "01 / MARKET CONTEXT",
+    "probability": "02 / PROBABILITY",
+    "portfolio": "03 / YOUR PORTFOLIO"
+  },
+  "after": {
+    "eyebrow": "06 / OFF THE CLOCK",
+    "title": "There’s a person\nbehind the pixels.",
+    "description": "Games, films, and books. The worlds I get lost in, and a different way to get to know me.",
+    "link": "Enter after hours",
+    "play": "PLAY.",
+    "pause": "PAUSE.",
+    "repeat": "REPEAT."
+  },
+  "footer": {
+    "eyebrow": "NEXT CHAPTER / LET’S CONNECT",
+    "title": "Good things start\nwith a hello.",
+    "description": "A project, an interesting idea, or just a conversation. My inbox is open.",
+    "email": "Say hello",
+    "copy": "Copy email address",
+    "copied": "Email copied",
+    "copyError": "Couldn’t copy. Use the email link.",
+    "note": "BUILT WITH INTENTION. FUELED BY CURIOSITY.",
+    "top": "Back to top",
+    "phone": "Phone",
+    "elsewhere": "ELSEWHERE"
+  },
+  "work": {
+    "eyebrow": "THE WORK / SELECTED PROJECTS & OPEN NOTES",
+    "line1": "LESS TALK.",
+    "line2": "MORE BUILD.",
+    "description": "Software, experiments, and research. A collection of things I’ve built and questions I’ve explored.",
+    "all": "Everything",
+    "tools": "Software & tools",
+    "research": "Research & notes",
+    "source": "View source",
+    "sourceUnavailable": "Project from my résumé",
+    "caseLabel": "CASE STUDY / INDEPENDENT PROJECT",
+    "medlifeTitle": "A connected approach to care.",
+    "medlifeIntro": "As founder and indie developer of MedLife, I worked across hardware, secure communication, mobile applications, and AI services. January–September 2025, Tehran.",
+    "layers": [
+      "Medical things",
+      "Secure communication",
+      "Care platform",
+      "Applied AI"
+    ],
+    "layerDescriptions": [
+      "PCB design, C, FreeRTOS, and Raspberry Pi Pico 1 hardware.",
+      "Cross-platform ECDH key exchange and ChaCha20-Poly1305 encryption.",
+      "Flask API microservices, mobile health, and patient–clinician vital-sign monitoring.",
+      "XGBoost health-risk classification and MedLLaMA-2.0 7B inference."
+    ],
+    "archive": "THE OPEN WORKBENCH",
+    "archiveTitle": "Built to be explored.",
+    "count": "projects",
+    "empty": "No projects in this category.",
+    "visit": "Visit Sandogh"
+  },
+  "interests": {
+    "eyebrow": "AFTER HOURS / MY PERSONAL PICKS",
+    "line1": "OTHER WORLDS.",
+    "line2": "SAME CURIOSITY.",
+    "description": "My favorite games, films, and books — a personal collection I wholeheartedly recommend, alongside the worlds I’m looking forward to exploring.",
+    "games": "My favorite games.",
+    "films": "My favorite films & series.",
+    "gamesLabel": "01 / INTERACTIVE WORLDS",
+    "filmsLabel": "02 / STORIES ON SCREEN",
+    "gamesDescription": "Personal favorites I wholeheartedly recommend, plus the next worlds on my list.",
+    "filmsDescription": "My favorite films and series — stories I wholeheartedly recommend.",
+    "all": "All chapters",
+    "completed": "Completed",
+    "in-progress": "In progress",
+    "planned": "Up next",
+    "gameCompleted": "Played",
+    "gameInProgress": "Playing",
+    "gamePlanned": "To play",
+    "filmCompleted": "Watched",
+    "filmInProgress": "Watching",
+    "filmPlanned": "To watch",
+    "search": "Find a game, film, or book…",
+    "searchLabel": "Search games, films, and books",
+    "clear": "Clear search",
+    "count": "titles",
+    "noGames": "Next level: coming soon.",
+    "noFilms": "The next screening is on its way.",
+    "emptyGames": "My personal game collection is being curated. Come back for the worlds I’ve explored and the ones still on my list.",
+    "emptyFilms": "My personal film collection is being curated. The stories, favorites, and watchlist will find their home here.",
+    "noResults": "No titles in this chapter.",
+    "noResultsDescription": "Try another status or a different search.",
+    "reset": "Show all titles",
+    "favorite": "A personal favorite",
+    "details": "Explore title",
+    "artwork": "Artwork source",
+    "legend": "EVERY STORY HAS ITS OWN PACE.",
+    "books": "My favorite books.",
+    "booksLabel": "03 / IDEAS IN PRINT",
+    "booksDescription": "My favorite books — reads I wholeheartedly recommend.",
+    "bookCompleted": "Read",
+    "bookInProgress": "Reading",
+    "bookPlanned": "To read",
+    "collection": "MY FAVORITES & RECOMMENDATIONS",
+    "openTitle": "Open {{title}}",
+    "close": "Close details",
+    "aboutCollection": "PERSONAL FAVORITES. WHOLEHEARTED RECOMMENDATIONS.",
+    "imageCredit": "Cover art belongs to its respective owner.",
+    "shelfGames": "Games",
+    "shelfFilms": "Films & series",
+    "shelfBooks": "Books"
+  },
   "errorHandler": {
-    "403": "403 | Access denied",
-    "404": "404 | Not found",
-    "500": "500 | CSR error"
+    "403": "Access denied",
+    "404": "This page took a side quest.",
+    "500": "Something interrupted the signal.",
+    "description": "Let’s get you back to familiar territory.",
+    "home": "Back to home"
   },
-  "headline": {
-    "name": "Alireza Soltani Neshan",
-    "username": "Alirezacodes",
-    "menu": {
-      "about": "About",
-      "gallery": "Repos",
-      "cv": "CV"
-    }
-  },
-  "main": {
-    "subAvatar": "Software specialist, enthusiastic to teaching and learning, with experience in academic environments, industrial and Research and Develop environments",
-    "skills": {
-      "label": "Skills",
-      "item1": "Programming",
-      "item2": "Mobile/Web Development",
-      "item3": "CI/CD",
-      "item4": "IoT/IoMT/Security/Blockchain researcher"
-    },
-    "languages": {
-      "label": "Languages",
-      "item1": "Typescript",
-      "item2": "Dart",
-      "item3": "Python",
-      "item4": "Swift",
-      "item5": "Rust"
-    },
-    "about": {
-      "label": "ABOUT",
-      "note": {
-        "title": "Note: ",
-        "content": "Currently I am working on two papers, a novel mHealth energy efficient integrated digital healthcare system and a review paper about IoMT and its privacy protection."
-      },
-      "firstParagraph": "My name is Alireza, and I'm {age} years old. Software specialist, enthusiastic about teaching and learning edge technologies, with experience in academic environments, industrial and Research and Develop environments. I'm studying master's degree in Software Engineering at IAU-NTB in the field of digital healthcare 4.0. I’m an indie developer working on an innovative digital healthcare startup. Currently, I’m actively pursuing preseed funding to recruit talented experts and expand our operations into the UAE, Saudi Arabia, and other Middle Eastern countries to have better development opportunity. In the future, we need embedded programmers, software and AI engineers especially in Iran. But with a volunteer based team, continuing without funding is unsustainable. So I'm desire to get cold call with investors who are interested in supporting and investing in our early stage startup. I'm able to online or in person meeting in UAE or Saudi Arabia.",
-      "experiences": {
-        "label": "Industrial Experiences",
-        "item1": "In September 2024 we found the TaraMed and I'm head of software and AI engines as a Co-Founder. In our startup, we are revolutionizing digital healthcare by providing hardware and secure, intelligent software solutions. By integrating AI into our services, we aim to empower patients and healthcare professionals alike, ensuring more intelligent decision-making and improved care outcomes. At first phase, we are working on integration of Patients and Clinicians communication together with a GenAI medical assistant. We're designing a prototype and I called it MedLife T1. It's heart of this digital healthcare system. With this hardware we can measure the patient's vital signs in secure data communication. After first phase, we will make a smart wristband for patients and provide more AI tools to our AI platforms (we called it Humera). \"Humera\" has its roots in Old Persian from the Achaemenid era. \"Hume\" means savior or helper, and \"mera\" means \"me\" or \"my.\" Ultimately, \"Humera\" means \"my savior!\"",
-        "item2": "In December 2020 until now, I have developed a lot of applications for Modbus data gathering, React TCI smart parking project, Flutter application MCI smart parking project, Implementation of organizational (B2B) projects, Checking guest entrance and exit in Ayandeh Bank and Monitoring Front-end Application for gas pipeline from Abadan to Iraq-Basra",
-        "item3": "In September 2023, I founded Labroo freedom Academy to teaching programming with Javascript and Typescript",
-        "item4": "From July to November 2023, I had the opportunity to work with AJP Company | Nozhan Softwares as a Front-end Application Developer and UI/UX designer for the Mashinline Application. Mashinline is an online platform for dealing in industrial, agricultural machinery, and spare parts, offering both new and used products through direct and indirect methods in Iran and the UAE. During my time there, I worked on developing the client side of Mashinline using Flutter, and also contributed to the development of the admin panel using React.js.",
-        "item5": "From December 2022 to March 2024, I have Implemented Desktop Application with Tauri for Sightence project Basir technologies. Sightence device is a body scanner (Efficient and cheaper version of Provision body scanner)",
-        "item6": "In February 2021, I developed Flutter Mobile Application for distributed Iraqi online Store",
-        "item7": "From 2017 to 2019, I interned in networking at Iran University of Science and Technology. During this time, I gained valuable experience in configuring Cisco switches, working with Linux, setting up servers, and dabbling in back-end development with Node.js."
-      },
-      "educations": {
-        "label": "Educations",
-        "item1": "In September 2023: Azad University (IAU), North Tehran - Master's degree, Computer Software Engineering",
-        "item2": "From 2019 to 2023: Shamsipour Technical and Vocational College, Tehran - Bachelor's degree, Computer Software Engineering",
-        "item3": "From 2016 to 2019: Darolfonoon Technical and Professional Conservatory, Tehran — Computer Diploma"
-      }
-    }
-  },
-  "gallery": {
-    "head": {
-      "title": "Papers and codes",
-      "content": "Welcome to my impressive collection of groundbreaking work in Bachelor's and Master's Computer and Software Engineering! All of my research is freely accessible and open to contributions. I also share my additional papers and articles for download here. "
-    },
-    "items": {
-      "item1": {
-        "title": "LamdaRED",
-        "content": "LamdaRED is a simple way to create your Requirement Engineering Diagrams without using a mouse or the complex interface of draw.io just by using straightforward syntax!"
-      },
-      "item2": {
-        "title": "Proteins Interactions Network Graph",
-        "content": "My recent research focuses on protein design to enhance the treatment of depression through serotonin modulation."
-      },
-      "item3": {
-        "title": "Requirement Engineering Report",
-        "content": "Report of Explainable software system: from requirements analysis to system evaluation"
-      },
-      "item4": {
-        "title": "Block chain papers",
-        "content": "I’m working over data transformation based on blockchain networks. With this decentralized blocks we can transform data secretly. At this papers you can learn about blockchain in Persian language."
-      },
-      "item5": {
-        "title": "RTOS Terminologies",
-        "content": "All terminologies I have learned from Reliable Real-Time Operating System for IoT Devices"
-      },
-      "item6": {
-        "title": "NoSQL  Breakdown report",
-        "content": "A Large-scale Analysis of Misconfigured NoSQL Services"
-      },
-      "item7": {
-        "title": "Addition Mesh ",
-        "content": "Parallel addition mesh algorithm with Rust sample"
-      },
-      "item8": {
-        "title": "Parsing Expression Grammar Notation",
-        "content": "My PEGN notes"
-      },
-      "item9": {
-        "title": "SNMP Client",
-        "content": "Rust Snmp Producer sample microservice"
-      },
-      "item10": {
-        "title": "Another SparQL Query set",
-        "content": "My SparQL notes"
-      }
-    }
+  "medlife": {
+    "open": "Inside MedLife",
+    "close": "Close project",
+    "eyebrow": "FROM HARDWARE TO A HUMAN CONVERSATION",
+    "intro": "Secure IoMT hardware, real-time mobile monitoring, and generative AI. Explore the project I built through five chapters and seven real photographs.",
+    "chapters": "Explore the MedLife workflow",
+    "fullSize": "View full-size image",
+    "previous": "Previous",
+    "next": "Next chapter",
+    "done": "Back to portfolio"
   }
 }

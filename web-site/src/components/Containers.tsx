@@ -1,17 +1,21 @@
-import React from "react";
+import { useRef, type ReactNode } from "react";
 import Headline from "./Headline";
 import Footer from "./Footer";
+import { useRevealMotion } from "../motion/useRevealMotion";
 
-export const Container: React.FC<
-  {
-    children: React.ReactNode | React.ReactNode[];
-  } & ScreenModule
-> = ({ children = <></>, t }): JSX.Element => {
+export function Container({
+  children,
+  t,
+}: { children: ReactNode } & ScreenModule) {
+  const shell = useRef<HTMLDivElement>(null);
+  useRevealMotion(shell);
   return (
-    <div className="flex flex-col max-w-[1366px] mx-auto m-[51px]">
+    <div className="site-shell" ref={shell}>
       <Headline t={t} />
-      {React.Children.toArray(children)}
+      <main id="main-content" tabIndex={-1}>
+        {children}
+      </main>
       <Footer t={t} />
     </div>
   );
-};
+}
