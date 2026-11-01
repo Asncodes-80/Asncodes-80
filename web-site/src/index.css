@@ -1640,7 +1640,7 @@ button:disabled {
   margin-top: 30px;
 }
 [dir="rtl"] {
-  --display: Vazirmatn, sans-serif;
+  --display: "Barlow Condensed", Changa, Vazirmatn, sans-serif;
   --sans: Vazirmatn, sans-serif;
   font-family: Vazirmatn, sans-serif;
 }
@@ -5203,7 +5203,7 @@ button:disabled {
   --talk-flow: 270deg;
 }
 [dir="rtl"] .talk-feature-copy h2 {
-  font-family: Vazirmatn, sans-serif;
+  font-family: var(--display);
   font-size: clamp(31px, 3.5vw, 48px);
   line-height: 1.55;
   font-weight: 700;
@@ -5533,6 +5533,13 @@ button:disabled {
     font-size: 7px;
   }
 }
+/* Persian display typography is reserved for titles. Body copy, navigation,
+   captions, and controls retain Vazirmatn. No artificial glyph stretching. */
+[dir="rtl"] :is(h1, h2, h3):not([dir="ltr"]) {
+  font-family: var(--display);
+  letter-spacing: 0;
+}
+
 /* Touch does not have a persistent hover state. Opaque surfaces also avoid
    re-blurring the moving artwork behind sticky headers and modal backdrops. */
 @media (hover: none), (pointer: coarse) {
