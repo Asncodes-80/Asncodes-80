@@ -4700,15 +4700,22 @@ button:disabled {
 }
 .talk-hero-art > img {
   position: absolute;
-  inset-inline-end: 0;
-  top: -9%;
-  width: 59%;
-  height: 115%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center 30%;
-  filter: grayscale(0.4) contrast(1.08) saturate(0.6);
-  opacity: 0.85;
+  object-position: center;
+  filter: contrast(1.04) saturate(0.9);
+  opacity: 0;
+  transform: scale(1.025);
+  transition:
+    opacity 650ms var(--motion-ease),
+    transform 1400ms var(--motion-ease);
+}
+.talk-hero-art > img.is-active {
+  opacity: 0.95;
+  transform: scale(1);
 }
 .talk-hero-art::after {
   content: "";
@@ -4717,10 +4724,10 @@ button:disabled {
   background:
     linear-gradient(
       var(--talk-flow),
-      #171820 4%,
-      #171820fa 29%,
-      #17182085 61%,
-      #1718200d 100%
+      #171820f7 0%,
+      #171820de 30%,
+      #17182080 57%,
+      #17182026 100%
     ),
     linear-gradient(0deg, #171820 0%, transparent 65%),
     linear-gradient(#bd93f925, #21222c0d);
@@ -5307,9 +5314,6 @@ button:disabled {
     min-height: 530px;
     padding: 26px;
   }
-  .talk-hero-art > img {
-    width: 75%;
-  }
   .talk-feature-copy {
     width: 76%;
     max-width: 520px;
@@ -5382,10 +5386,9 @@ button:disabled {
   }
   .talk-hero-art > img {
     width: 100%;
-    height: 75%;
-    top: -6%;
-    object-position: center 28%;
-    opacity: 0.7;
+    height: 70%;
+    top: 0;
+    object-position: center;
   }
   .talk-hero-art::after {
     background:
@@ -5552,6 +5555,10 @@ button:disabled {
   .talk-feature-copy,
   .talk-player-dialog::backdrop {
     animation: none;
+  }
+  .talk-hero-art > img {
+    transition: none;
+    transform: none;
   }
   .talk-card:is(:hover, :focus-within),
   .talk-feature-poster:is(:hover, :focus-visible),

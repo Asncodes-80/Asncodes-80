@@ -7,6 +7,8 @@ export interface Talk {
   topic: LocalizedText;
   duration: string;
   thumbnail: string;
+  /** Original concept artwork for featured slides, served locally. */
+  backdrop?: string;
   /** Original public video, verified against the owner's channel. */
   href: string;
 }
@@ -36,6 +38,7 @@ export const talks: Talk[] = [
     ),
     topic: text("AI × HUMAN", "هوش مصنوعی × انسان"),
     duration: "37:48",
+    backdrop: "images/talks/backdrops/ai-human.webp",
   }),
   talk("lr9MBM5_h-U", {
     title: text(
@@ -48,6 +51,7 @@ export const talks: Talk[] = [
     ),
     topic: text("MCP / CREATIVE TOOLS", "MCP / ابزارهای خلاقیت"),
     duration: "5:46",
+    backdrop: "images/talks/backdrops/mcp-creative.webp",
   }),
   talk("8KDZKII9Tfc", {
     title: text(
@@ -72,6 +76,7 @@ export const talks: Talk[] = [
     ),
     topic: text("SOFTWARE ARCHITECTURE", "معماری نرم‌افزار"),
     duration: "32:45",
+    backdrop: "images/talks/backdrops/software-architecture.webp",
   }),
   talk("FUUw7fcSyTI", {
     title: text(

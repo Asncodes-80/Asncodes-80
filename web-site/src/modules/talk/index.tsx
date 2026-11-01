@@ -188,12 +188,18 @@ export default function TalkScreen({ t }: ScreenModule) {
       </div>
       <section className="talk-hero" aria-labelledby="talk-featured-title">
         <div className="talk-hero-art" aria-hidden="true">
-          <img
-            src={asset("avatar/profile.jpg")}
-            alt=""
-            width="896"
-            height="932"
-          />
+          {featuredTalks.map((item, index) => (
+            <img
+              key={item.id}
+              src={asset(item.backdrop ?? item.thumbnail)}
+              className={feature === index ? "is-active" : undefined}
+              alt=""
+              width="1672"
+              height="941"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
+          ))}
         </div>
         <div className="talk-hero-grid" aria-hidden="true" />
         <div className="talk-original mono">

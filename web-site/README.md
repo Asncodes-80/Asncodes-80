@@ -19,6 +19,7 @@ The default URL is `http://localhost:5173/Asncodes-80/`. The existing GitHub Pag
 - `src/data/interests.ts`: the owner's 15 games, eight films/series, and six books. Each item has an explicit `kind`, `status`, local artwork, alternative text, source credit, and optional creator or official link.
 - `src/data/medlife.ts`: five bilingual project chapters, with the seven original project photographs in `public/images/projects/medlife/`. Both home and work open the same animated mini page; each photograph links to its locally hosted full-size original.
 - `src/data/talks.ts`: six curated talks verified against the owner's YouTube channel, with original Persian titles, English translations, durations, topic shelves, and direct video links. The thumbnails in `public/images/talks/` are served locally.
+- `public/images/talks/backdrops/`: three original cinematic backgrounds, selected per featured talk and blended with CSS transitions. Generation mode and the complete prompt set are documented in `docs/talk-backgrounds.md`.
 - `src/i18n/locales/{en,fa}.json`: interface labels and editorial copy. The language button also switches text direction and remembers the selection in the browser.
 - `public/documents/alireza-soltani-neshan-resume.pdf`: the supplied résumé, unchanged, linked from the header.
 - `public/images/interests/`: locally served WebP cover artwork. Sources are available in each title's details dialog. Artwork belongs to its respective rights holder.
