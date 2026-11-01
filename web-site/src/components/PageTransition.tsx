@@ -44,16 +44,14 @@ export default function PageTransition({
         [
           {
             opacity: 0,
-            transform: `translateX(${direction * 32}px) scale(1.008)`,
-            filter: "blur(2px)",
+            transform: `translate3d(${direction * 24}px, 0, 0)`,
           },
           {
             opacity: 1,
-            transform: "translateX(0) scale(1)",
-            filter: "blur(0)",
+            transform: "translate3d(0, 0, 0)",
           },
         ],
-        { duration: 440, easing: CONSOLE_EASE },
+        { duration: 320, easing: CONSOLE_EASE },
       );
       void animation.finished.then(
         () => {
@@ -92,16 +90,14 @@ export default function PageTransition({
         [
           {
             opacity: 1,
-            transform: "translateX(0) scale(1)",
-            filter: "blur(0)",
+            transform: "translate3d(0, 0, 0)",
           },
           {
             opacity: 0,
-            transform: `translateX(${-direction * 18}px) scale(0.992)`,
-            filter: "blur(2px)",
+            transform: `translate3d(${-direction * 14}px, 0, 0)`,
           },
         ],
-        { duration: 150, easing: CONSOLE_EXIT_EASE, fill: "forwards" },
+        { duration: 120, easing: CONSOLE_EXIT_EASE, fill: "forwards" },
       );
       void animation.finished.then(
         () => {

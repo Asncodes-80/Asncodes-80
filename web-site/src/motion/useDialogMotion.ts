@@ -31,15 +31,13 @@ export function useDialogMotion(
             {
               opacity: 0,
               transform: "translateY(24px) scale(0.96)",
-              filter: "blur(3px)",
             },
             {
               opacity: 1,
               transform: "translateY(0) scale(1)",
-              filter: "blur(0)",
             },
           ],
-          { duration: 420, easing: CONSOLE_EASE },
+          { duration: 300, easing: CONSOLE_EASE },
         );
       }
     } else if (node.open) node.close();
@@ -61,7 +59,6 @@ export function useDialogMotion(
     const from = {
       opacity: current.opacity,
       transform: current.transform,
-      filter: current.filter,
     };
     active.current?.cancel();
     node.dataset.closing = "true";
@@ -71,7 +68,6 @@ export function useDialogMotion(
         {
           opacity: 0,
           transform: "translateY(14px) scale(0.975)",
-          filter: "blur(2px)",
         },
       ],
       { duration: 170, easing: CONSOLE_EXIT_EASE, fill: "forwards" },

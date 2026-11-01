@@ -39,48 +39,70 @@ export function useRevealMotion(root: RefObject<HTMLElement>) {
   useEffect(() => {
     if (reduced || !root.current || !("IntersectionObserver" in window)) return;
     const seen = new WeakSet<Element>();
-    const animations = new Set<Animation>();
+    const animations = new Map<Element, Animation>();
+    const finePointer = window.matchMedia(
+      "(hover: hover) and (pointer: fine)",
+    ).matches;
+    const finish = (element: Element) => {
+      observer.unobserve(element);
+      const animation = animations.get(element);
+      animations.delete(element);
+      animation?.cancel();
+    };
     const observer = new IntersectionObserver(
       (entries) => {
+        let order = 0;
         for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          observer.unobserve(entry.target);
           const element = entry.target as HTMLElement;
-          if (!element.animate || element.contains(document.activeElement))
+          if (!entry.isIntersecting) {
+            if (animations.has(element)) finish(element);
             continue;
-          const siblings = element.parentElement?.children;
-          const order = siblings ? Array.from(siblings).indexOf(element) : 0;
+          }
+          if (animations.has(element)) continue;
+          // The route already animates its contents. Avoid nested layers and
+          // keep fast scrolling/focusing responsive instead of queuing reveals.
+          const phase = element.closest<HTMLElement>(".route-stage")?.dataset
+            .phase;
+          if (
+            !element.animate ||
+            element.contains(document.activeElement) ||
+            (phase && phase !== "idle") ||
+            animations.size >= 8
+          ) {
+            observer.unobserve(element);
+            continue;
+          }
+          // Opacity does not compete with card hover transforms or depend on
+          // support for newer individual translate keyframes.
           const animation = element.animate(
-            [
-              { opacity: 0, translate: "0 14px" },
-              { opacity: 1, translate: "0 0" },
-            ],
+            [{ opacity: 0.15 }, { opacity: 1 }],
             {
-              duration: 400,
-              delay: Math.min(Math.max(order, 0), 5) * 28,
+              duration: finePointer ? 320 : 240,
+              delay: finePointer ? Math.min(order++, 3) * 20 : 0,
               easing: CONSOLE_EASE,
               fill: "backwards",
             },
           );
-          animations.add(animation);
+          animations.set(element, animation);
           void animation.finished.then(
-            () => animations.delete(animation),
-            () => animations.delete(animation),
+            () => finish(element),
+            () => animations.delete(element),
           );
         }
       },
       { rootMargin: "0px 0px -12px 0px", threshold: 0.04 },
     );
-    const register = () => {
-      root.current
-        ?.querySelectorAll<HTMLElement>(targets)
-        .forEach((element) => {
-          if (seen.has(element)) return;
-          seen.add(element);
-          observer.observe(element);
-        });
+    const observe = (element: Element) => {
+      if (seen.has(element)) return;
+      seen.add(element);
+      observer.observe(element);
     };
-    register();
+    const register = (node: Element) => {
+      if (node.matches(targets)) observe(node);
+      node.querySelectorAll(targets).forEach(observe);
+    };
+    const shell = root.current;
+    register(shell);
     const mutations = new MutationObserver((records) => {
       for (const record of records) {
         record.removedNodes.forEach((node) => {
@@ -89,15 +111,29 @@ export function useRevealMotion(root: RefObject<HTMLElement>) {
           node
             .querySelectorAll(targets)
             .forEach((element) => observer.unobserve(element));
+          for (const element of animations.keys()) {
+            if (node.contains(element)) finish(element);
+          }
+        });
+        record.addedNodes.forEach((node) => {
+          if (node instanceof Element && shell.contains(node)) register(node);
         });
       }
-      register();
     });
-    mutations.observe(root.current, { childList: true, subtree: true });
+    const focus = (event: FocusEvent) => {
+      if (!(event.target instanceof Element)) return;
+      for (const element of animations.keys()) {
+        if (element.contains(event.target)) finish(element);
+      }
+    };
+    mutations.observe(shell, { childList: true, subtree: true });
+    shell.addEventListener("focusin", focus);
     return () => {
       observer.disconnect();
       mutations.disconnect();
+      shell.removeEventListener("focusin", focus);
       animations.forEach((animation) => animation.cancel());
+      animations.clear();
     };
   }, [reduced, root]);
 }

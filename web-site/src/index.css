@@ -2990,10 +2990,6 @@ button:disabled {
     transform 0.3s,
     border-color 0.3s;
 }
-.featured-game-card:hover {
-  transform: rotate(0);
-  border-color: var(--green);
-}
 .featured-game-artwork {
   display: block;
   position: absolute;
@@ -3005,9 +3001,6 @@ button:disabled {
   object-fit: cover;
   object-position: 50% 45%;
   transition: transform 0.5s;
-}
-.featured-game-card:hover .featured-game-artwork > img {
-  transform: scale(1.035);
 }
 .featured-game-overlay {
   position: absolute;
@@ -3181,11 +3174,6 @@ button:disabled {
     transform 0.25s,
     box-shadow 0.25s;
 }
-.media-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--purple);
-  box-shadow: 4px 4px 0 #171820;
-}
 .media-card-button {
   display: flex;
   flex-direction: column;
@@ -3209,9 +3197,6 @@ button:disabled {
   object-fit: cover;
   transition: transform 0.5s;
 }
-.media-card:hover .media-artwork > img {
-  transform: scale(1.045);
-}
 .media-artwork-shade {
   position: absolute;
   inset: 0;
@@ -3233,11 +3218,6 @@ button:disabled {
   transition:
     background 0.25s,
     color 0.25s;
-}
-.media-card:hover .media-open-icon {
-  background: var(--purple);
-  color: var(--deep);
-  border-color: var(--purple);
 }
 .media-artwork-index {
   position: absolute;
@@ -3958,6 +3938,12 @@ button:disabled {
     box-shadow 360ms var(--motion-ease),
     border-color var(--motion-focus) var(--motion-ease);
 }
+.media-card {
+  /* Keep the focus frame, but never repaint a changing shadow every frame. */
+  transition:
+    transform var(--motion-focus) var(--motion-ease),
+    border-color var(--motion-focus) var(--motion-ease);
+}
 .media-card::before,
 .selected-project::before,
 .archive-project::before {
@@ -3973,7 +3959,6 @@ button:disabled {
     opacity var(--motion-focus) var(--motion-ease),
     transform var(--motion-focus) var(--motion-ease);
 }
-.media-card:focus-within,
 .selected-project:focus-visible,
 .archive-project:focus-within {
   z-index: 2;
@@ -3982,6 +3967,9 @@ button:disabled {
   box-shadow:
     0 14px 32px #10111880,
     0 0 24px #bd93f912;
+}
+.media-card:focus-within {
+  border-color: var(--purple);
 }
 .media-card:focus-within::before,
 .selected-project:focus-visible::before,
@@ -4007,14 +3995,10 @@ button:disabled {
 .featured-game-artwork > img {
   transition: transform 650ms var(--motion-ease);
 }
-.media-card:focus-within .media-artwork > img {
-  transform: scale(1.045);
-}
 .media-card:focus-within .media-open-icon {
   background: var(--purple);
   color: var(--deep);
   border-color: var(--purple);
-  transform: rotate(90deg);
 }
 .featured-game-card,
 .portrait-figure,
@@ -4079,11 +4063,11 @@ button:disabled {
 @keyframes console-status-in {
   from {
     opacity: 0;
-    translate: 0 4px;
+    transform: translateY(4px);
   }
   to {
     opacity: 1;
-    translate: 0 0;
+    transform: translateY(0);
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -4100,6 +4084,7 @@ button:disabled {
     transform: translate(2px, -2px);
   }
   .media-card:hover,
+  .media-card:focus-within,
   .selected-project:hover,
   .archive-project:hover {
     z-index: 2;
@@ -4115,14 +4100,24 @@ button:disabled {
     opacity: 1;
     transform: scale(1);
   }
-  .media-card:hover .media-open-icon {
+  .media-card:is(:hover, :focus-within) .media-open-icon {
+    background: var(--purple);
+    color: var(--deep);
+    border-color: var(--purple);
     transform: rotate(90deg);
+  }
+  .media-card:is(:hover, :focus-within) .media-artwork > img {
+    transform: scale(1.035);
   }
   .featured-game-card:hover {
     transform: translateY(-3px) rotate(0) scale(1.018);
     box-shadow:
       0 16px 36px #10111880,
       0 0 28px #bd93f918;
+    border-color: var(--green);
+  }
+  .featured-game-card:hover .featured-game-artwork > img {
+    transform: scale(1.035);
   }
   .after-hours-teaser:is(:hover, :focus-within) .poster-front {
     transform: translate(-5px, -4px) rotate(-15deg);
@@ -4501,11 +4496,11 @@ button:disabled {
 @keyframes mini-chapter-in {
   from {
     opacity: 0;
-    translate: 0 10px;
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    translate: 0 0;
+    transform: translateY(0);
   }
 }
 @media (max-width: 600px) {
@@ -4993,8 +4988,7 @@ button:disabled {
   background: var(--bg);
   transition:
     transform var(--motion-focus) var(--motion-ease),
-    border-color var(--motion-focus),
-    box-shadow var(--motion-focus);
+    border-color var(--motion-focus);
 }
 .talk-card::before {
   content: "";
@@ -5014,10 +5008,6 @@ button:disabled {
 }
 .talk-card:focus-within {
   border-color: var(--purple);
-  transform: translateY(-3px);
-  box-shadow:
-    0 10px 30px #10111870,
-    0 0 22px #bd93f912;
 }
 .talk-card:focus-within::before {
   opacity: 1;
@@ -5036,9 +5026,7 @@ button:disabled {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition:
-    transform 650ms var(--motion-ease),
-    filter var(--motion-panel);
+  transition: transform 400ms var(--motion-ease);
 }
 .talk-card-play {
   position: absolute;
@@ -5051,8 +5039,7 @@ button:disabled {
   transform: translate(-50%, -50%) scale(0.8);
   opacity: 0;
   border: 1px solid #f8f8f266;
-  background: #21222cbd;
-  backdrop-filter: blur(6px);
+  background: #21222ce8;
   color: var(--green);
   transition:
     transform var(--motion-focus) var(--motion-ease),
@@ -5061,10 +5048,6 @@ button:disabled {
 .talk-card:focus-within .talk-card-play {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-}
-.talk-card:focus-within .talk-card-image > img {
-  transform: scale(1.035);
-  filter: brightness(0.7);
 }
 .talk-duration {
   position: absolute;
@@ -5235,15 +5218,15 @@ button:disabled {
 @keyframes talk-feature-in {
   from {
     opacity: 0;
-    translate: 0 10px;
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    translate: 0 0;
+    transform: translateY(0);
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  .talk-card:hover {
+  .talk-card:is(:hover, :focus-within) {
     border-color: var(--purple);
     transform: translateY(-3px);
     box-shadow:
@@ -5257,9 +5240,8 @@ button:disabled {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
-  .talk-card:hover .talk-card-image > img {
+  .talk-card:is(:hover, :focus-within) .talk-card-image > img {
     transform: scale(1.035);
-    filter: brightness(0.7);
   }
 }
 @media (max-width: 1100px) {
@@ -5551,6 +5533,19 @@ button:disabled {
     font-size: 7px;
   }
 }
+/* Touch does not have a persistent hover state. Opaque surfaces also avoid
+   re-blurring the moving artwork behind sticky headers and modal backdrops. */
+@media (hover: none), (pointer: coarse) {
+  .site-header {
+    background: var(--bg);
+    backdrop-filter: none;
+  }
+  .media-dialog::backdrop,
+  .project-mini-page::backdrop,
+  .talk-player-dialog::backdrop {
+    backdrop-filter: none;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .talk-feature-copy,
   .talk-player-dialog::backdrop {
@@ -5562,7 +5557,11 @@ button:disabled {
   }
   .talk-card:is(:hover, :focus-within),
   .talk-feature-poster:is(:hover, :focus-visible),
-  .talk-card:is(:hover, :focus-within) .talk-card-image > img {
+  .talk-card:is(:hover, :focus-within) .talk-card-image > img,
+  .media-card:is(:hover, :focus-within) .media-artwork > img,
+  .media-card-button:active .media-artwork,
+  .featured-game-card:is(:hover, :focus-visible),
+  .featured-game-card:is(:hover, :focus-visible) .featured-game-artwork > img {
     transform: none;
   }
 }
