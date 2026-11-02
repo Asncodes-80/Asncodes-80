@@ -90,7 +90,7 @@ export const interests: Interest[] = [
   {
     id: "gta-vi",
     kind: "game",
-    title: "GTA VI",
+    title: "Grand Theft Auto VI",
     status: "planned",
     artwork: "images/interests/gta-vi.webp",
     artworkAlt:
@@ -136,6 +136,18 @@ export const interests: Interest[] = [
     "Action",
     "Survival",
   ]),
+  {
+    id: "halo-4",
+    kind: "game",
+    title: "Halo 4",
+    status: "completed",
+    artwork: "images/interests/halo-4.webp",
+    artworkAlt: "007 First Light — official key art",
+    artworkSource:
+      "https://www.imdb.com/title/tt2006120/mediaviewer/rm1719977730/",
+    genres: ["First-person shooter"],
+    href: "https://www.imdb.com/title/tt2006120/",
+  },
   {
     id: "dropout",
     kind: "film",
