@@ -16,7 +16,7 @@ export const profile = {
     { label: "GitHub", href: "https://github.com/Asncodes-80" },
     { label: "LinkedIn", href: "https://linkedin.com/in/alirezacodes" },
     { label: "YouTube", href: "https://youtube.com/@alirezacodes" },
-    { label: "Instagram", href: "https://instagram.com/alireza.codes" },
+    { label: "Instagram", href: "https://instagram.com/ariya.codes" },
     { label: "X", href: "https://x.com/asn80soltani" },
     {
       label: "Stack Overflow",
