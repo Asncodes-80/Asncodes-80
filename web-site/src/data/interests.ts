@@ -83,7 +83,7 @@ export const interests: Interest[] = [
     "Battle royale",
     "Multiplayer",
   ]),
-  game("cyberpunk", "Cyberpunk 2077", "in-progress", 1091500, [
+  game("cyberpunk", "Cyberpunk 2077", "completed", 1091500, [
     "RPG",
     "Cyberpunk",
   ]),
@@ -91,19 +91,16 @@ export const interests: Interest[] = [
     id: "gta-vi",
     kind: "game",
     title: "Grand Theft Auto VI",
-    status: "planned",
+    status: "in-progress",
     artwork: "images/interests/gta-vi.webp",
     artworkAlt:
       "GTA VI — official Rockstar artwork of Jason and Lucia beside a car at sunset",
     artworkSource: "https://www.rockstargames.com/VI/media/artwork-wallpapers",
     genres: ["Open world", "Action"],
-    note: text(
-      "I've been eagerly waiting for 13 years.",
-      "۱۳ ساله مشتاقانه منتظرشم.",
-    ),
+    note: text("AN EXTREME GAMING EXPERIENCE", "یک شاهکار به تمام معنا"),
     href: "https://www.rockstargames.com/VI/",
     spotlight: {
-      label: text("MOST ANTICIPATED", "مشتاقانه در انتظار"),
+      label: text("ABSOLUTE PEAK, ABSOLUTE CINEMA", "اجرای یک شاهکار"),
       artwork: "images/interests/gta-vi-jason-lucia.webp",
       wideArtwork: "images/interests/gta-vi-jason-lucia-wide.webp",
     },
